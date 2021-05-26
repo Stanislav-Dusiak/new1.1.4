@@ -80,7 +80,6 @@ public class UserDaoJDBCImpl implements UserDao {
                 user.setAge(age);
                 allUsers.add(user);
             }
-            statement.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }

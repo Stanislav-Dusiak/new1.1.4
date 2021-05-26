@@ -3,6 +3,8 @@ package jm.task.core.jdbc;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
+import jm.task.core.jdbc.util.Util;
+import org.hibernate.Session;
 
 import java.util.List;
 
@@ -18,7 +20,7 @@ public class Main {
         userService.saveUser("Tinki", "Winki", (byte) 11);
         System.out.println("User с именем – Tinki добавлен в базу данных");
         userService.saveUser("Vasya", "Petrov", (byte) 75);
-        System.out.println("User с именем – Dave добавлен в базу данных");
+        System.out.println("User с именем – Vasya добавлен в базу данных");
 
         List<User> users = userService.getAllUsers();
 
